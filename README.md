@@ -28,11 +28,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Git Repo](https://github.com/Robert-Thaiyah/flyo-data-storage-component)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -44,19 +44,17 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 ### What I learned
-
+ - Translate CSS -  I have been using margin left like a total newbie. This just opened my eyes to new opportunities I never thought was possible. 
 
 ### Continued development
-
+ - CSS semantics. I am very much lacking in them.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
+- [Translate CSS](https://www.w3schools.com/cssref//css_pr_translate.php) - I have been using `margin-left` and `margin-top` to move items on a page. Never again.
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Robert Thaiyah]https://github.com/Robert-Thaiyah)
 
 
 ## Acknowledgments

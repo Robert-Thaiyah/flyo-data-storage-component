@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+:root{
+ --very-dark-blue:hsl(229, 57%, 11%);
+ --dark-blue:hsl(228, 56%, 26%);
+ --greyish-blue:hsl(229, 7%, 55%);
+ --pale-blue:hsl(243, 100%, 93%);
+}
+
+
+* {
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    background: url(./images/bg-desktop.png) no-repeat ;
+    background-size: contain;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-color: var(--very-dark-blue);
+    transition: 1s ease;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.flyo{
+    padding: 2.5rem;
+    background: var(--dark-blue);
+    border-radius: 10px 80px 10px 10px;
+    width: 350px;
+}
+
+.flyo-logo {
+    margin-top: 1rem;
+}
+
+.logos{
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+    margin-top: 1rem;
+    
+}
+
+.logos img{
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+    object-fit: contain;
+}
+
+.svg {
+    padding: 0.75rem;
+    background-color: var(--very-dark-blue);
+    border-radius: 5px;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px; 
+    height: 90px; 
+    background: #fff;
+    position: relative;
+    -moz-border-radius: 10px; 
+    -webkit-border-radius: 10px; 
+    border-radius: 10px 10px 0 10px;
+    translate: 170%  20%;
+    
+ }
+ .data:before {
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 36px solid #fff; 
+    border-left: 35px solid transparent; 
+    margin: 137px 20px 15px 165px;
+ }
+
+.data p {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.data span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--greyish-blue);
+}
+
+.display {
+    background: var(--dark-blue);
+    width: 500px;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.display p {
+    color: #fff;
+    font-weight: 400;
+}
+
+#progressbar {
+    margin-top: 0.7rem;
+    background-color:var(--very-dark-blue);
+    border-radius: 13px;
+    padding: 3px;
+  }
+ 
+  #progressbar>div {
+    background: linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 100%);
+    width: 75%;
+    height: 10px;
+    border-radius: 10px;
+  }
+
+  .circle{
+    padding: 3.5px;
+    margin: 2px;
+    float: right;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+
+.units{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 1200px){
+
+body {
+     background-image: url(./images/bg-mobile.png);
+     background-position: center;
+}
+    .wrapper {
+         display: grid;
+         place-items: center;  
+    }
+
+    .display {
+        width: 400px;
+        justify-content: center;
+    }
+   
+    .data{
+        border-radius: 10px; 
+        translate: 70% 210%;
+    }
+
+    .data:before {
+        border-top: 0;
+        border-left: 0;
+    }
+}
